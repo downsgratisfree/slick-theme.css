@@ -6,15 +6,7 @@
 }
 
 /* Icons */
-@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
-}
+@font-face { }
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -23,14 +15,14 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
 
     display: block;
 
     width: 20px;
-    height: 20px;
-    margin-top: -10px;
     padding: 0;
+    -webkit-transform: translate(0, -17%);
+    -ms-transform: translate(0, -17%);
+    transform: translate(0, -17%);
 
     cursor: pointer;
 
@@ -64,9 +56,8 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
+    font-size: 50px;
+    line-height: 2;
 
     opacity: .75;
     color: white;
@@ -86,11 +77,11 @@
 }
 .slick-prev:before
 {
-    content: 'â†';
+    content: 'Â«';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: 'â†’';
+    content: 'Â«';
 }
 
 .slick-next
@@ -104,15 +95,15 @@
 }
 .slick-next:before
 {
-    content: 'â†’';
+    content: 'Â»';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: 'â†';
+    content: 'Â»';
 }
 
 /* Dots */
-.slick-slider
+.slick-dotted.slick-slider
 {
     margin-bottom: 30px;
 }
@@ -120,12 +111,13 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -45px;
+    bottom: -25px;
 
     display: block;
 
     width: 100%;
     padding: 0;
+    margin: 0;
 
     list-style: none;
 
@@ -198,4 +190,11 @@
 {
     opacity: .75;
     color: black;
+}
+
+ /* ANTICÓPIA */
+#carrosel {
+z-index:9999;
+background-image:url('https://i.imgur.com/yikEMe9.png');
+height:146px;
 }
